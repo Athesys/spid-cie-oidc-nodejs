@@ -155,7 +155,7 @@ export type TrustAnchorEntityConfiguration = {
       federation_resolve_endpoint: string;
       federation_status_endpoint: string;
       homepage_uri: string;
-      name: string;
+      organization_name: string;
       federation_list_endpoint: string;
     };
   };

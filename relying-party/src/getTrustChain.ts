@@ -101,7 +101,7 @@ async function getEntityConfiguration<T>(
   try {
     // SHOULDDO when doing post request ensure timeout and ssl is respected
     const response = await configuration.httpClient({
-      url: url + ".well-known/openid-federation",
+      url: url + "/.well-known/openid-federation",
       method: "GET",
     });
     const jws = await response.body;
@@ -339,7 +339,7 @@ const trustAnchorEntityConfigurationSchema: JSONSchemaType<TrustAnchorEntityConf
         federation_entity: {
           type: "object",
           properties: {
-            name: { type: "string" },
+            organization_name: { type: "string" },
             homepage_uri: { type: "string" },
             contacts: { type: "array", items: { type: "string" } },
             federation_fetch_endpoint: { type: "string" },
@@ -348,7 +348,7 @@ const trustAnchorEntityConfigurationSchema: JSONSchemaType<TrustAnchorEntityConf
             federation_status_endpoint: { type: "string" },
           },
           required: [
-            "name",
+            "organization_name",
             "homepage_uri",
             "federation_fetch_endpoint",
             "federation_list_endpoint",
