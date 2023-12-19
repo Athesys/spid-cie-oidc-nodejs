@@ -353,7 +353,7 @@ const trustAnchorEntityConfigurationSchema: JSONSchemaType<TrustAnchorEntityConf
             "federation_fetch_endpoint",
             "federation_list_endpoint",
             "federation_resolve_endpoint",
-            "federation_status_endpoint",
+            //"federation_status_endpoint",
           ],
         },
       },
