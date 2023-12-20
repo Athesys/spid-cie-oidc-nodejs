@@ -348,8 +348,8 @@ const trustAnchorEntityConfigurationSchema: JSONSchemaType<TrustAnchorEntityConf
             federation_status_endpoint: { type: "string" },
           },
           required: [
-            "organization_name",
-            "homepage_uri",
+            //"organization_name",
+            //"homepage_uri",
             "federation_fetch_endpoint",
             "federation_list_endpoint",
             "federation_resolve_endpoint",
